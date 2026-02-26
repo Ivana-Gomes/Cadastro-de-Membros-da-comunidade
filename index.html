@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+   <div id="formulario">
+        <h1>Formulário de Cadastro</h1>
+        <p>Preencha os campos abaixo para se cadastrar:</p>
+        <p>Todos os campos são obrigatórios.</p>
+        <p>Após o cadastro, você receberá um email de confirmação.</p>
+
+            <p>Por favor, preencha todos os campos obrigatórios.</p>
+        </div>
+        <form action="process.php" method="POST">
+            
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+       <label for= "data de nascimento">Data de Nascimento:</label>
+       <input type="date" id="birthdate" name="birthdate" required>
+       <br><br>
+
+       <label for="gender">Gênero:</label>
+       <select id="gender" name="gender" required>
+           <option value="male">Masculino</option>
+           <option value="female">Feminino</option>
+           <option value="other">Outro</option>
+       </select>
+       <br><br>
+
+       <div id="community">
+            <h3>Comunidade:</h3>
+            <p>Selecione a comunidade que você faz parte:</p>
+            <input type="checkbox" id="community1" name="community" value="JavaJungle" required>
+            <label for="community1">JavaJungle</label><br>
+            <input type="checkbox" id="community2" name="community" value="phpManaus" required>
+            <label for="community2">PhpManaus</label><br>
+            <input type="checkbox" id="community3" name="community" value="NorteJs" required>
+            <label for="community3">NorteJs</label><br>
+            <input type="checkbox" id="community4" name="community" value="outras" required>
+            <label for="community4">Outra Comunidade</label>
+            <input type="text" id="other_community" name="other_community">
+       </br>
+
+
+        </div>
+         <br>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+       <br><br>
+       <label for="github">GitHub:</label>
+       <input type="url" id="github" name="github" required>
+       <br><br>
+        <label for="phone">Telefone:</label>
+       <input type="tel" id="phone" name="phone" required>
+       <br><br>
+
+       <button type="submit">Cadastrar</button>
+       <button type="reset">Limpar</button>
+
+     </form>
+   </div>
+</body>
+</html>
